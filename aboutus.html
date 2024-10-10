@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Basic CSS for styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-image: url('Pic/homebackground.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        header {
+            background-color: white;
+            color: black;
+            padding: 10px 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo {
+            height: 100px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 1.8rem;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        nav ul a {
+            text-decoration: none;
+            color: black;
+            margin: 0 15px;
+            font-size: 1.2rem;
+        }
+
+        nav ul a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        main h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        main p {
+            font-size: 1.2rem;
+        }
+
+        /* Our Work Section */
+        .work-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .work-gallery div {
+            margin: 10px;
+            padding: 10px;
+            background-color: white;
+            color: black;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+        }
+
+        .work-gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* Client Reviews Section */
+        .reviews-section {
+            margin-top: 40px;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 8px;
+            color: white;
+            text-align: left;
+        }
+
+        /* Flexbox for Reviews */
+        .reviews-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .review-box {
+            flex: 1;
+            min-width: 220px;
+            max-width: 250px;
+            margin: 10px;
+            padding: 15px;
+            background-color: white;
+            color: black;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        .review-box strong {
+            font-size: 1.1rem;
+            color: #333;
+        }
+
+        .review-box p {
+            margin: 5px 0 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+        .social-links a {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+
+        .social-links a:hover {
+            color: #ddd; /* Lighten the color on hover */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+            }
+
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav ul a {
+                margin: 5px 0;
+            }
+
+            .work-gallery {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .reviews-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .reviews-section {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="index.jsp">
+                <img src="Pic/gk.png" alt="GK Computer Systems logo" class="logo">
+            </a>
+          
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                    <li><a href="accessories.html">Accessories</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h2>Our Mission</h2>
+        <p>At GK Computer Systems, our mission is to provide high-quality technology solutions that enhance productivity and efficiency.</p>
+
+        <h2>Our Vision</h2>
+        <p>We aim to be a leading provider of computer accessories and support services, recognized for our commitment to customer satisfaction.</p>
+
+        <h2>Our Work</h2>
+        <div class="work-gallery">
+            <div>
+                <img src="Pic/project1.jpg" alt="Project 1">
+                <p>Given laptops on rental to Yerwada Central Jail for Chess world championship.</p>
+            </div>
+            <div>
+                <img src="Pic/project2.jpg" alt="Project 2">
+                <p>Given Multiple Laptops on rental to IT Corporate Offices.</p>
+            </div>
+            <div>
+                <img src="Pic/project3.jpg" alt="Project 3">
+                <p>Serviced multiple printers for a <br>large office setup.</p>
+            </div>
+            <div>
+                <img src="Pic/project4.jpeg" alt="Project 3">
+                <p>Camera Installation on Multiple places.</p>
+            </div>
+        </div>
+
+        <!-- Client Reviews Section -->
+        <h2>Client Reviews</h2>
+        <div class="reviews-section">
+            <div class="reviews-container">
+                <div class="review-box">
+                    <strong>karan Pawar</strong>
+                    <p>"GK Computer Systems provided excellent service. My laptop was fixed quickly, and the staff was very professional!"</p>
+                </div>
+
+                <div class="review-box">
+                    <strong>Vishnu Bhande</strong>
+                    <p>"I rented a laptop for my office work, and the quality was top-notch. Highly recommend!"</p>
+                </div>
+
+                <div class="review-box">
+                    <strong>Nav-Nath.B</strong>
+                    <p>"Great customer service! Helped me troubleshoot my software issues efficiently."</p>
+                </div>
+                
+                <div class="review-box">
+                    <strong>Amit Rauniyar</strong>
+                    <p>"Great work at this shop. I build gaming pc"</p>
+                </div>
+                
+                <div class="review-box">
+                    <strong>Samruddhi Shinde</strong>
+                    <p>"Got my laptop repaired, helping and less time consuming experience..."</p>
+                </div>
+
+                <div class="review-box">
+                    <strong>Anita Singh</strong>
+                    <p>"I'm very satisfied with their printer repair services. Fixed it within a day. Will return for future services!"</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 GK Computer Systems. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/gkcomputersystems" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="mailto:gkcomp.sys@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="tel:+919665138001"><i class="fas fa-phone"></i></a>
+            <a href="https://wa.me/919665138001" target="_blank"><i class="fab fa-whatsapp"></i></a> <!-- WhatsApp link -->
+        </div>
+    </footer>
+</body>
+</html>

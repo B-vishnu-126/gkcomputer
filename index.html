@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GK Computer Systems - Home</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Basic CSS for styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-image: url('Pic/homebackground.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        header {
+            background-color: white;
+            color: white;
+            padding: 10px 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo {
+            height: 100px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 1.8rem;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        nav ul a {
+            text-decoration: none;
+            color: black;
+            margin: 0 15px;
+            font-size: 1.2rem;
+        }
+
+        nav ul a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            color: grey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 60px;
+            text-align: center;
+            flex-direction: column;
+        }
+
+        main h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        main p {
+            font-size: 1.2rem;
+            color: white;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Styles for the service boxes */
+        .main-services {
+            display: flex; /* Use flexbox for layout */
+            flex-wrap: wrap; /* Allow wrapping to the next line */
+            justify-content: center; /* Center align the boxes */
+            gap: 20px; /* Space between the boxes */
+            margin-top: 20px; /* Space above the service boxes */
+        }
+
+        .service-box {
+            background-color: rgba(255, 255, 255, 0.9); /* Light background for visibility */
+            border: 1px solid #ccc; /* Border around the box */
+            border-radius: 8px; /* Rounded corners */
+            padding: 20px; /* Padding inside the box */
+            margin: 20px; /* Margin around each box */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+            max-width: 300px; /* Set a maximum width for boxes */
+            text-align: left; /* Align text to the left within boxes */
+            transition: transform 0.2s; /* Smooth transformation effect */
+        }
+
+        .service-box:hover {
+            transform: translateY(-5px); /* Lift effect on hover */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+        .social-links a {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+
+        .social-links a:hover {
+            color: #ddd; /* Lighten the color on hover */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+            }
+
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav ul a {
+                margin: 5px 0;
+            }
+
+            main {
+                height: auto;
+            }
+
+            .service-box {
+                padding: 15px;
+                max-width: 100%;
+            }
+
+            .main-services {
+                flex-direction: column; /* Stack boxes vertically on small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="index.jsp">
+                <img src="Pic/gk.png" alt="GK Computer Systems logo" class="logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                    <li><a href="accessories.html">Accessories</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1>Welcome To GK Computer Systems <br>Your Technology Trusted Partner</h1>
+        <p>
+            At GK Computer Systems, we provide tailored IT solutions for small businesses, including cybersecurity, network services, and IT consulting. Our dedicated professionals understand your unique needs and deliver high-touch support to keep your technology secure and efficient. Together, we strengthen our community by enabling your business to thrive.
+        </p>
+        <h2 style="font-size: 1.8rem; margin-top: 20px; color: white;">Our Services:</h2>
+
+        <div class="main-services">
+            <div class="service-box">
+                <strong>Laptop/Desktop Repairs:</strong>
+                <ul>
+                    <li>Broken screens and hinges.</li>
+                    <li>Hard drive replacement.</li>
+                    <li>Motherboard replacement.</li>
+                    <li>Keyboard and trackpads.</li>
+                    <li>Spill remediation/water damage repair.</li>
+                </ul>
+            </div>
+
+            <div class="service-box">
+                <strong>Laptop/Desktop Rental:</strong>
+                <ul>
+                    <li>Laptop and desktop rental for all types of premises.</li>
+                    <li>Available on a monthly and yearly basis.</li>
+                </ul>
+            </div>
+
+            <div class="service-box">
+                <strong>Viruses and Software:</strong>
+                <ul>
+                    <li>Security Patch installations.</li>
+                    <li>Virus removals.</li>
+                    <li>Software and OS repair.</li>
+                    <li>System optimizations.</li>
+                    <li>Software troubleshooting.</li>
+                </ul>
+            </div>
+            <div class="service-box">
+                <strong>Networking Services:</strong><br>
+                <ul>
+               <li> All types of Networking installation.</li>
+                </ul>
+            </div>
+            <div class="service-box">
+                <strong>Printer Services:</strong>
+                <ul>
+                    <li>All brands of printer repairing.</li>
+                    <li>All toner and cartridge refilling.</li>
+                </ul>
+            </div>
+            <div class="service-box">
+                <strong>CCTV Services:</strong><br>
+                <ul>
+               <li> All types of CCTV Mounting and installation.</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 GK Computer Systems. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/gkcomputersystems" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="mailto:gkcomp.sys@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="tel:+919665138001"><i class="fas fa-phone"></i></a>
+            <a href="https://wa.me/919665138001" target="_blank"><i class="fab fa-whatsapp"></i></a> <!-- WhatsApp link -->
+        </div>
+    </footer>
+</body>
+</html>

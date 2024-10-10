@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GK Computer Systems - Home</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS -->
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Basic CSS for styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-image: url('Pic/homebackground.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        header {
+            background-color: white;
+            color: Black;
+            padding: 10px 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo {
+            height: 100px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 1.8rem;
+            color: black; /* Change color for better visibility */
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        nav ul a {
+            text-decoration: none;
+            color: black;
+            margin: 0 15px;
+            font-size: 1.2rem;
+        }
+
+        nav ul a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        main h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        main p {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 15px; /* Add margin for better spacing */
+        }
+
+        .contact-info {
+            background-color: rgba(255, 255, 255, 0.8); /* Light background for contrast */
+            padding: 20px; /* Padding around the contact info */
+            border-radius: 8px; /* Rounded corners */
+            margin-top: 20px; /* Space above the contact section */
+            display: inline-block; /* Center the box */
+        }
+
+        .map-container {
+            margin-top: 20px;
+            border-radius: 8px; /* Rounded corners for the map */
+            overflow: hidden; /* Clip the corners */
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        .social-links a {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+
+        .social-links a:hover {
+            color: #ddd; /* Lighten the color on hover */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: center; /* Center items in the navbar */
+            }
+
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav ul a {
+                margin: 5px 0;
+            }
+
+            main {
+                padding: 10px; /* Reduce padding on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="index.jsp">
+                <img src="Pic/gk.png" alt="GK Computer Systems logo" class="logo">
+            </a>
+          
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                    <li><a href="accessories.html">Accessories</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h2>Get in Touch</h2>
+        <p>If you have any questions, feel free to reach out to us via email or phone.</p>
+
+        <div class="contact-info">
+            <h3>Email:</h3>
+            <p>gkcomp.sys@gmail.com</p>
+
+            <h3>Phone:</h3>
+            <p>+91 9665138001</p>
+            <p>+91 8308686086</p>
+
+            <h3>Address:</h3>
+            <p>Office No.4, Prasad Apartment<br>Datta Nagar, Katraj, Pune-411046</p>
+        </div>
+
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3425.095079839341!2d73.84597317465048!3d18.444970171480275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2eab9f418d26d%3A0x22e80ce0e71e8931!2sG%20K%20computer%20Systems!5e1!3m2!1sen!2sin!4v1728567962392!5m2!1sen!2sin"
+                width="600"
+                height="450"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+            ></iframe>
+        </div>
+    </main>
+
+    <!-- Footer with social links -->
+    <footer>
+        <p>&copy; 2024 GK Computer Systems. All rights reserved.</p>
+
+        <div class="social-links">
+            <a href="https://www.facebook.com/gkcomputersystems" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="mailto:gkcomp.sys@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="tel:+919665138001"><i class="fas fa-phone"></i></a>
+            <a href="https://wa.me/919665138001" target="_blank"><i class="fab fa-whatsapp"></i></a> <!-- WhatsApp link -->
+        </div>
+    </footer>
+</body>
+</html>
