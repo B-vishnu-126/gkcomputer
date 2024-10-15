@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GK Computer Systems - Home</title>
+    <title>GK CS - Home</title>
     <link rel="stylesheet" href="style.css"> <!-- Link to your CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
@@ -104,11 +104,18 @@
             max-width: 300px; /* Set a maximum width for boxes */
             text-align: left; /* Align text to the left within boxes */
             transition: transform 0.2s; /* Smooth transformation effect */
+            cursor: pointer; /* Change cursor to pointer */
         }
 
         .service-box:hover {
             transform: translateY(-5px); /* Lift effect on hover */
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+        }
+
+        .details {
+            display: none; /* Initially hide the details */
+            font-size: 1.5rem; /* Larger font size for details */
+            margin-top: 10px; /* Space above details */
         }
 
         footer {
@@ -123,6 +130,7 @@
             margin: 0;
             font-size: 1rem;
         }
+
         .social-links a {
             color: white;
             margin: 0 10px;
@@ -132,6 +140,31 @@
 
         .social-links a:hover {
             color: #ddd; /* Lighten the color on hover */
+        }
+
+        /* Clients section styles */
+        .clients {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+        }
+
+        .client-carousel {
+            display: flex; /* Use flexbox for a horizontal layout */
+            justify-content: center; /* Center align items */
+            flex-wrap: wrap; /* Allow wrapping to next line if necessary */
+            gap: 20px; /* Space between client images */
+        }
+
+        .client-image {
+            flex: 0 0 auto; /* Prevent flex items from shrinking */
+            margin: 0 10px; /* Margin between images */
+        }
+
+        .client-image img {
+            width: 150px; /* Set image width */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 10px; /* Optional: rounded corners */
         }
 
         /* Responsive Design */
@@ -163,13 +196,27 @@
             }
         }
     </style>
+    <script>
+        // JavaScript to toggle details display
+        function toggleDetails(event) {
+            const details = event.currentTarget.querySelector('.details');
+            if (details.style.display === 'none' || details.style.display === '') {
+                details.style.display = 'block'; // Show details
+            } else {
+                details.style.display = 'none'; // Hide details
+            }
+        }
+    </script>
 </head>
 <body>
     <header>
         <div class="navbar">
-            <a href="index.jsp">
+            <a href="index.html">
                 <img src="Pic/gk.png" alt="GK Computer Systems logo" class="logo">
             </a>
+            <div class="exclusive-offer">
+                Free Pickup and Drop Facility!
+            </div>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -188,56 +235,83 @@
         <h2 style="font-size: 1.8rem; margin-top: 20px; color: white;">Our Services:</h2>
 
         <div class="main-services">
-            <div class="service-box">
-                <strong>Laptop/Desktop Repairs:</strong>
-                <ul>
-                    <li>Broken screens and hinges.</li>
-                    <li>Hard drive replacement.</li>
-                    <li>Motherboard replacement.</li>
-                    <li>Keyboard and trackpads.</li>
-                    <li>Spill remediation/water damage repair.</li>
-                </ul>
+            <div class="service-box" onclick="toggleDetails(event)">
+                <strong>Laptop/Desktop Repairs</strong>
+                <div class="details">
+                    <ul>
+                        <li>Broken screens and hinges.</li>
+                        <li>Hard drive replacement.</li>
+                        <li>Motherboard replacement.</li>
+                        <li>Keyboard and trackpads.</li>
+                        <li>Spill remediation/water damage repair.</li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="service-box">
-                <strong>Laptop/Desktop Rental:</strong>
-                <ul>
-                    <li>Laptop and desktop rental for all types of premises.</li>
-                    <li>Available on a monthly and yearly basis.</li>
-                </ul>
+            <div class="service-box" onclick="toggleDetails(event)">
+                <strong>Laptop/Desktop Rental</strong>
+                <div class="details">
+                    <ul>
+                        <li>Laptop and desktop rentals for all types of premises.</li>
+                        <li>Available on a monthly or yearly basis.</li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="service-box">
-                <strong>Viruses and Software:</strong>
-                <ul>
-                    <li>Security Patch installations.</li>
-                    <li>Virus removals.</li>
-                    <li>Software and OS repair.</li>
-                    <li>System optimizations.</li>
-                    <li>Software troubleshooting.</li>
-                </ul>
+            <div class="service-box" onclick="toggleDetails(event)">
+                <strong>Viruses and Software</strong>
+                <div class="details">
+                    <ul>
+                        <li>Security Patch installations.</li>
+                        <li>Virus removals.</li>
+                        <li>Software and OS repair.</li>
+                        <li>System optimizations.</li>
+                        <li>Software troubleshooting.</li>
+                    </ul>
+                </div>
             </div>
-            <div class="service-box">
-                <strong>Networking Services:</strong><br>
-                <ul>
-               <li> All types of Networking installation.</li>
-                </ul>
+            <div class="service-box" onclick="toggleDetails(event)">
+                <strong>Networking Services</strong><br>
+                <div class="details">
+                    <ul>
+                        <li>Installation of all types of networking systems.</li>
+                    </ul>
+                </div>
             </div>
-            <div class="service-box">
-                <strong>Printer Services:</strong>
-                <ul>
-                    <li>All brands of printer repairing.</li>
-                    <li>All toner and cartridge refilling.</li>
-                </ul>
-            </div>
-            <div class="service-box">
-                <strong>CCTV Services:</strong><br>
-                <ul>
-               <li> All types of CCTV Mounting and installation.</li>
-                </ul>
+            <div class="service-box" onclick="toggleDetails(event)">
+                <strong>Hardware Upgrades</strong><br>
+                <div class="details">
+                    <ul>
+                        <li>SSD Upgrades.</li>
+                        <li>RAM Upgrades.</li>
+                        <li>Graphic card replacements.</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </main>
+
+    <div class="clients">
+        <h2 style="color: white;">Our Clients</h2>
+        <div class="client-carousel">
+            <div class="client-image">
+                <img src="Pic/Client3.jpg" alt="Client 1">
+            </div>
+            <div class="client-image">
+                <img src="Pic/Client2.jpg" alt="Client 2">
+            </div>
+            <div class="client-image">
+                <img src="Pic/Client3.jpg" alt="Client 3">
+            </div>
+            <div class="client-image">
+                <img src="Pic/Client1.jpg" alt="Client 4">
+            </div>
+            <div class="client-image">
+                <img src="Pic/Client4.jpg" alt="Client 4">
+            </div>
+        </div>
+    </div>
+
     <footer>
         <p>&copy; 2024 GK Computer Systems. All rights reserved.</p>
         <div class="social-links">
